@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+:root {
+	--primary-green: hsl(75, 94%, 57%);
+	--neutral-white: hsl(0, 0%, 100%);
+	--neutral-grey: hsl(0, 0%, 20%);
+	--neutral-dark-grey: hsl(0, 0%, 12%);
+	--neutral-off-black: hsl(0, 0%, 8%);
+
+	--hover-transition-ms: 200ms;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	min-height: 600px;
+	background-color: var(--neutral-off-black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	font-family: "Inter", sans-serif;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	max-width: 385px;
+	height: 610px;
+	padding: 1.5rem;
+	border-radius: 1.15rem;
+	background-color: var(--neutral-dark-grey);
+	justify-content: center;
+	align-items: center;
+}
+
+
+.user-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-image img {
+    width: 90px;
+    height: 90px;
+	clip-path: circle();
+}
+
+.user-name {
+	font-weight: 700;
+	color: var(--neutral-white);
+	margin-top: 2rem;
+}
+
+.user-location {
+	font-weight: 600;
+	color: var(--primary-green);
+	margin-top: 1rem;
+}
+
+.user-quote {
+	color: var(--neutral-white);
+	font-weight: 400;
+	margin-top: 2rem;
+}
+
+.link-list {
+	height: 100%;
+	width: 100%;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.link-item {
+	width: 90%;
+	background-color: var(--neutral-grey);
+	border-radius: 10px;
+	min-height: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.link-item a {
+	width: 100%;
+	height: 100%;
+	color: var(--neutral-white);
+	font-weight: 600;
+	text-decoration: none;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.link-item:hover{
+    background-color: var(--primary-green);
+    color: var(--neutral-off-black);
+    transition: 200ms;
+}
+
+.link-item:hover a{
+    color: var(--neutral-off-black);
+    transition: 200ms;
+}
